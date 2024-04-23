@@ -1,27 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+    <meta charset="utf-8" />
     <title>Fancify Shamcify</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding-top: 50px; }
+        .wrapper { display: flex; min-height: 100vh; flex-direction: column; }
+        .content { flex: 1; }
+        .footer { background-color: #222; color: white; text-align: center; padding: 10px 0; }
+    </style>
     <script src="fancifymytext.js"></script>
 </head>
 <body>
-    <h1>Fancify my Text</h1>
+    <div class="wrapper">
+        <header class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">HELLDIVERS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="fancifymytext.html">Fancify Text</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-    <fieldset style="border: solid 1px;">
-        <legend>Text</legend>
-        <textarea id="textInput" rows="4" cols="30"></textarea>
-    </fieldset>
+        <div class="container content">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <h1>Fancify my Text</h1>
 
-    <fieldset style="border: solid 1px;">
-        <legend>Fancify</legend>
-        <button id="biggerBtn">Bigger!</button>
-        <input type="radio" id="fancyShmancy" name="style" onchange="changeStyle();">
-        <label for="fancyShmancy">FancyShmancy</label>
-        <input type="radio" id="boringBetty" name="style" onchange="changeStyle();">
-        <label for="boringBetty">BoringBetty</label>
-    </fieldset>
+                    <fieldset style="border: solid 1px;">
+                        <legend>Text</legend>
+                        <textarea id="textInput" rows="4" cols="30"></textarea>
+                    </fieldset>
 
-    <button id="mooBtn">Moo</button>
+                    <fieldset style="border: solid 1px;">
+                        <legend>Fancify</legend>
+                        <button id="biggerBtn">Bigger!</button>
+                        <input type="radio" id="fancyShmancy" name="style" onchange="changeStyle();">
+                        <label for="fancyShmancy">FancyShmancy</label>
+                        <input type="radio" id="boringBetty" name="style" onchange="changeStyle();">
+                        <label for="boringBetty">BoringBetty</label>
+                    </fieldset>
 
+                    <button id="mooBtn">Moo</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            © SUPEREARTH MINISTRY OF TRUTH. All rights reserved.
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
